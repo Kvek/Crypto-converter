@@ -1,0 +1,24 @@
+.Dropdown-container {
+    margin: 0 10px;
+    display: flex;
+}
+
+select {
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Architects Daughter', cursive;
+    padding: 0 1em;
+    border: 10px solid transparent;
+    border-image: url(/public/border.svg) 20%;
+    outline: none;
+    box-sizing: border-box;
+    background-image: url(/public/dropdown.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+}

@@ -1,7 +1,21 @@
 .App {
-  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  font-size: 40px;
 }
 
 .App-header {}
 
-.App-content {}
+.App-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Input-fields {
+  display: flex;
+  margin: 1em;
+}

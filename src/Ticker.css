@@ -1,0 +1,21 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.Difference {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.increased {
+    color: #257A2F
+}
+
+.decreased {
+    color: #FF0000
+}
