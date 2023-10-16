@@ -17,21 +17,22 @@ export const Ticker = ({ value }: Props) => {
     setCurrentValue(value);
   }, [value]);
 
-  const difference =
-    Math.round(
-      Math.sqrt(Math.pow(Number(previousValue) - Number(currentValue), 2)) * 100
-    ) / 100;
+  const difference = Math.sqrt(
+    Math.pow(Number(previousValue) - Number(currentValue), 2)
+  ).toFixed(3);
+
+  if (!value) return;
 
   return (
     <div className="Container">
-      {currentValue} WUC
+      {Number(currentValue).toLocaleString()} WUC
       <div
         className={`Difference ${
           previousValue > currentValue ? "decreased" : "increased"
         }`}
       >
         <span>{previousValue > currentValue ? <Down /> : <Up />}</span>
-        <span>{difference}</span>
+        <span>{Number(difference).toLocaleString()}</span>
       </div>
     </div>
   );

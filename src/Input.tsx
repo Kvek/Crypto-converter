@@ -6,6 +6,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   id: string;
+  "data-testid"?: string;
 }
 
 export const Input = (props: Props) => {

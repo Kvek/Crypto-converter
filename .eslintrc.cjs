@@ -1,6 +1,7 @@
 /* eslint-env node */
 module.exports = {
   extends: [
+    "plugin:jsx-a11y/strict",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
   ],

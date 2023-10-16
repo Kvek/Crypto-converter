@@ -1,13 +1,8 @@
-.Input-container {
-    margin: 0 10px;
-    display: flex;
-}
-
 input {
+    height: 100%;
     font-size: 18px;
     font-family: 'Architects Daughter', cursive;
-    outline: none;
-    border: 10px solid transparent;
+    border: 12px solid transparent;
     border-image: url(/public/border.svg) 20%;
 }
 
@@ -15,4 +10,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: textfield;
 }
